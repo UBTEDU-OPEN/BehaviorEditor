@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/images/servo.png</file>
+        <file>res/images/drop_down_icon.svg</file>
+        <file>res/images/servo_tabbutton_bg.png</file>
+        <file>res/images/servo_tabbutton_bg_hovering.png</file>
+        <file>res/images/setting.png</file>
+        <file>res/images/setting_auto.png</file>
+        <file>res/images/lock.png</file>
+        <file>res/images/lock_open.png</file>
+        <file>res/images/add.png</file>
+        <file>res/images/insert.png</file>
+        <file>res/images/modify.png</file>
+        <file>res/images/mirror.png</file>
+        <file>res/images/unmirror.png</file>
+        <file>res/images/jointAdjustment/ic_arthritis_tab.png</file>
+        <file>res/images/jointAdjustment/ic_arthritis_tab_highlight.png</file>
+        <file>res/images/jointAdjustment/ic_lock_device.png</file>
+        <file>res/images/jointAdjustment/ic_lock_device_disable.png</file>
+        <file>res/images/jointAdjustment/ic_unlock_device.png</file>
+        <file>res/qss/jointadjustment.qss</file>
+        <file>res/images/jointAdjustment/ic_arthritis_off.png</file>
+        <file>res/images/jointAdjustment/ic_arthritis_on.png</file>
+        <file>res/qss/servoform.qss</file>
+        <file>res/images/jointAdjustment/ic_arthritis_silde.png</file>
+        <file>res/images/jointAdjustment/ic_arthritis_silde_p.png</file>
+        <file>res/images/jointAdjustment/ic_arrows_down.png</file>
+        <file>res/images/jointAdjustment/ic_arrows_down_highlight.png</file>
+        <file>res/images/jointAdjustment/ic_arrows_up.png</file>
+        <file>res/images/jointAdjustment/ic_arrows_up_highlight.png</file>
+        <file>res/images/jointAdjustment/ic_arrows_down_disable.png</file>
+        <file>res/images/jointAdjustment/ic_grid.png</file>
+    </qresource>
+</RCC>

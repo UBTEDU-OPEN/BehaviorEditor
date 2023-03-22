@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RobotSearchDialog</class>
+ <widget class="QDialog" name="RobotSearchDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="titleWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#505769;
+border-top-left-radius:5px;
+border-top-right-radius:5px</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::MinimumExpanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>274</width>
+          <height>15</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="titleLabel">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>WiFi Connect</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>250</width>
+          <height>15</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeBtn">
+        <property name="minimumSize">
+         <size>
+          <width>18</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>18</width>
+          <height>18</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>680</width>
+       <height>314</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>680</width>
+       <height>314</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#444A5A;
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+</string>
+     </property>
+     <widget class="InputSnWidget" name="inputWidget"/>
+     <widget class="SearchingWidget" name="searchingWidget"/>
+     <widget class="RobotListWidget" name="robotListWidget"/>
+     <widget class="ConnectionSuccessWidget" name="successWidget"/>
+     <widget class="ConnectedWidget" name="connectedWidget"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>InputSnWidget</class>
+   <extends>QWidget</extends>
+   <header>inputsnwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SearchingWidget</class>
+   <extends>QWidget</extends>
+   <header>searchingwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RobotListWidget</class>
+   <extends>QWidget</extends>
+   <header>robotlistwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ConnectionSuccessWidget</class>
+   <extends>QWidget</extends>
+   <header>connectionsuccesswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ConnectedWidget</class>
+   <extends>QWidget</extends>
+   <header>connectedwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

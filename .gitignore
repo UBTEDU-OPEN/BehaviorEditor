@@ -1,0 +1,4 @@
+ClassicStudio/src/*.pro.user*
+ClassicStudio/temp/
+ClassicStudio/bin/
+ClassicStudio/build*

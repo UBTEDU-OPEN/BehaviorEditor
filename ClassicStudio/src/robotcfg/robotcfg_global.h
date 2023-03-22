@@ -1,0 +1,12 @@
+﻿#ifndef ROBOTCFG_GLOBAL_H
+#define ROBOTCFG_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(ROBOTCFG_LIBRARY)
+#  define ROBOTCFGSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define ROBOTCFGSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // ROBOTCFG_GLOBAL_H

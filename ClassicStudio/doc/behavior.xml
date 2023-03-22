@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    @version        协议版本
+    @actionLevel    动作级别(常规动作=1, 高危动作=2)
+    @frameRate      帧率,单位:f/s
+    @startTime      开始时间(单位:ms)
+    @runTime        运行时间(单位:ms)
+-->
+<BCL version="1.0" actionLevel="1" frameRate="50" startTime="10" runTime="100">
+    <!--
+        @id    层ID(动作层=1, 音乐层=2, 表情层=3)
+        @name  层名称
+    -->
+    <Layer id="1" name="action">
+        <!--
+            @location  关键帧位置
+            @interval  帧间隔时间(此帧与上一帧的间隔时间)
+        -->
+        <Frame location="3" interval="3">
+            <!--
+                @id           舵机ID
+                @targetAngle  舵机目标角度
+                @runTime      运行时间
+                @runMode      运行模式(匀速运动=1, 曲线运动=2)
+            -->
+            <Servo id="1" targetAngle="120.0" runTime="2" runMode="1"/>
+            <Servo id="2" targetAngle="120.0" runTime="2" runMode="1"/>
+            <Servo id="3" targetAngle="120.0" runTime="2" runMode="1"/>
+            <Servo id="4" targetAngle="120.0" runTime="2" runMode="1"/>
+            <Servo id="5" targetAngle="120.0" runTime="2" runMode="1"/>
+            <Servo id="6" targetAngle="120.0" runTime="2" runMode="1"/>
+            <Servo id="7" targetAngle="120.0" runTime="4" runMode="1"/>
+            <Servo id="8" targetAngle="120.0" runTime="4" runMode="1"/>
+            <Servo id="9" targetAngle="120.0" runTime="4" runMode="1"/>
+            <Servo id="10" targetAngle="120.0" runTime="5" runMode="1"/>
+            <Servo id="11" targetAngle="120.0" runTime="5" runMode="1"/>
+            <Servo id="12" targetAngle="120.0" runTime="5" runMode="1"/>
+        </Frame>
+        <Frame location="7" interval="4">
+            <Servo id="13" targetAngle="120.0" runTime="3" runMode="1"/>
+            <Servo id="14" targetAngle="120.0" runTime="3" runMode="1"/>
+            <Servo id="15" targetAngle="120.0" runTime="3" runMode="1"/>
+            <Servo id="16" targetAngle="120.0" runTime="3" runMode="1"/>
+            <Servo id="17" targetAngle="120.0" runTime="3" runMode="1"/>
+            <Servo id="18" targetAngle="120.0" runTime="3" runMode="1"/>
+            <Servo id="19" targetAngle="120.0" runTime="3" runMode="1"/>
+            <Servo id="20" targetAngle="120.0" runTime="5" runMode="1"/>
+            <Servo id="21" targetAngle="120.0" runTime="5" runMode="1"/>
+            <Servo id="22" targetAngle="120.0" runTime="5" runMode="1"/>
+            <Servo id="23" targetAngle="120.0" runTime="5" runMode="1"/>
+            <Servo id="24" targetAngle="120.0" runTime="5" runMode="1"/>
+        </Frame>
+    </Layer>
+    <Layer id="2" name="music">
+        <!--
+            @id         音乐ID
+            @startTime  开始时间
+            @playTime   播放时间
+            @path       音乐文件路径
+        -->
+        <Item id="0" startTime="5" playTime="10" path="test.mp3"/>
+        <Item id="15" startTime="5" playTime="10" path="test.mp3"/>
+    </Layer>
+    <Layer id="3" name="expression">
+        <!--
+            @id         表情ID
+            @startTime  开始时间
+            @playTime   播放时间
+            @path       表情文件路径
+            @type       动画类型(gif=1,lottie=2,svg=3,png=4)
+            @loops      循环播放次数
+        -->
+        <Item id="0" startTime="5" playTime="10" path="test.gif" type="1" loops="1"/>
+        <Item id="15" startTime="5" playTime="10" path="test.json" type="2" loops="1"/>
+        <Item id="30" startTime="5" playTime="10" path="test.svg" type="3" loops="1"/>
+        <Item id="45" startTime="5" playTime="10" path="test.png" type="4" loops="1"/>
+    </Layer>
+    <Attributes>
+        <Labels>
+            <Label location="3" desc="test1"/>
+            <Label location="7" desc="test2"/>
+        </Labels>
+    </Attributes>
+</BCL>

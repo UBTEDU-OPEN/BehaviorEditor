@@ -1,0 +1,465 @@
+﻿/*******************MainWindow 模块*********************/
+
+
+
+/*MainWindow*/
+MainWindow
+{
+    background: #1E232D;
+}
+
+#stopBtn,#preBtn,#playBtn,#nextBtn,#WatchBtn,#ServoSyncBtn,#StanceBtn,#divisionCount
+{
+    color: black;
+}
+
+#behaviorMenu
+{
+    color: white;
+}
+
+
+ToolBar#toolBar > QLabel
+{
+    background: #2F3440;
+}
+
+*
+{
+    color: #FFFFFF;
+}
+
+FrameIntervalEditor#addInterval
+{
+    color: black;
+}
+
+#servoHierachy,BehaviorLayerContainer QWidget
+{
+    color: black;
+}
+
+
+ToolBar > QPushButton
+{
+    border: none;
+}
+
+TitleBar > QPushButton
+{
+    border: none;
+}
+
+QTabBar::tab > QPushButton
+{
+    border: none;
+}
+
+BehaviorTable > QPushButton
+{
+    background: #5B6270;
+    border-radius: 2px;
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+ServoEditor QPushButton,RobotActionList QPushButton
+{
+    background: #5B6270;
+    border-radius: 2px;
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+ComboButton QPushButton#functionButton
+{
+    background: #5B6270;
+    height: 24px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding: 8px;
+}
+
+ComboButton QPushButton#menuButton
+{
+    background: #5B6270;
+    height: 24px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 8px;
+}
+
+QPushButton#motionCurve
+{
+    background: #5B6270;
+    border-radius: 2px;
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+QPushButton::menu-indicator {
+    image: url(:/image/res/image/button_icon_down.png);
+    subcontrol-position: right center;
+    subcontrol-origin: content;
+    left: 8px;
+}
+
+#behaviorEditHolder
+{
+    background: #2C313D;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#previewHolder
+{
+    background: #2C313D;
+    border-top-left-radius: 8px;
+}
+
+QTabWidget::pane {
+    background: #1E232D;
+    border: none;
+    padding-top: 2px;
+}
+
+QTabWidget::tab-bar {
+    left: 4px;
+}
+
+QTabBar::tab
+{
+    background: #383E4B;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 28px;
+    min-width: 80px;
+    opacity: 0.9;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+QTabBar::tab:selected
+{
+    background: #5B6270;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #1E232D;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+QScrollBar:vertical {
+    width: 14px;
+    border: none;
+    background: #1E232D;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #7B8392;
+    border-radius: 3px;
+    min-width: 80px;
+}
+
+QScrollBar::handle:vertical {
+    background: #7B8392;
+    border-radius: 3px;
+    min-height: 80px;
+}
+
+QScrollBar::add-page {
+    background: #1E232D;
+}
+
+QScrollBar::sub-page {
+    background: #1E232D;
+}
+
+QScrollBar::add-line {
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+
+QScrollBar::sub-line {
+    border: none;
+    background: none;
+    height: 0px;
+    width: 0px;
+}
+
+SpinBox
+{
+    width: 56px;
+    height: 24px;
+    background: #1E232D;
+    border: 1px solid #3B4352;
+    border-radius: 2px;
+}
+
+SpinBox::up-button {
+    width: 10px;
+    border-left: 1px solid #3B4352;
+    border-bottom: 1px solid #3B4352;
+}
+
+SpinBox::up-arrow {
+    image: url(:/image/res/image/cell_icon_up_normal.png);
+}
+
+SpinBox::up-arrow:hover {
+    image: url(:/image/res/image/cell_icon_up_blue.png);
+}
+
+SpinBox::down-button {
+    width: 10px;
+    border-left: 1px solid #3B4352;
+}
+
+SpinBox::down-arrow {
+    image: url(:/image/res/image/cell_icon_down_normal.png);
+}
+
+SpinBox::down-arrow:hover {
+    image: url(:/image/res/image/cell_icon_down_blue.png);
+}
+
+
+BehaviorTableWidget SpinBox
+{
+    width: 56px;
+    height: 24px;
+    background: #1F3242;
+    border: 1px solid #4FB2B9;
+    border-radius: 2px;
+}
+
+BehaviorTableWidget SpinBox::up-button {
+    width: 10px;
+    border-left: 1px solid #4FB2B9;
+    border-bottom: 1px solid #4FB2B9;
+}
+
+BehaviorTableWidget SpinBox::up-arrow {
+    image: url(:/image/res/image/cell_icon_up_blue.png);
+}
+
+
+BehaviorTableWidget SpinBox::down-button {
+    width: 10px;
+    border-left: 1px solid #4FB2B9;
+}
+
+BehaviorTableWidget SpinBox::down-arrow {
+    image: url(:/image/res/image/cell_icon_down_blue.png);
+}
+
+
+
+QTimeEdit
+{
+    width: 80px;
+    height: 24px;
+    background: #22A3DB;
+    border: 1px solid #5DFCFF;
+    border-radius: 2px;
+}
+
+QTimeEdit::up-button {
+    width: 10px;
+    border-left: 1px solid #5DFCFF;
+    border-bottom: 1px solid #5DFCFF;
+}
+
+QTimeEdit::down-button {
+    width: 10px;
+    border-left: 1px solid #5DFCFF;
+}
+
+QToolTip
+{
+    border: 1px solid #373C49;
+    background: #373C49;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 2px;
+}
+
+TipDialog
+{
+    border: 1px solid red;
+    background-color: #1E232D;
+    border-radius: 4px;
+}
+
+QLabel#separator
+{
+    width: 230px;
+    height: 1px;
+    background: #191D25;
+}
+
+QMenu {
+    background: transparent;
+    border-image: url(:/image/res/image/rectangle.png) 2 2 2 2;
+    border-width: 2px;
+}
+
+QMenu::item {
+    background-color: transparent;
+    color: white;
+}
+
+QMenu::item:selected {
+    background-color: #00A5FF;
+    border-radius: 4px;
+}
+
+QMenu::item:disabled {
+    color: rgba(255,255,255,100);
+}
+
+QSlider::groove:horizontal {
+    height: 2px;
+    background: #4B5265;
+}
+
+QSlider::handle:horizontal {
+    height: 12px;
+    width: 12px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    border-image: url(:/image/res/image/icon_slide.png);
+}
+
+QSlider::add-page:horizontal {
+    background: #4B5265;
+}
+
+QSlider::sub-page:horizontal {
+    background: #00A5FF;
+}
+
+QSlider::handle:horizontal:hover {
+    height: 12px;
+    width: 12px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    border-image: url(:/image/res/image/icon_slide_highlight.png);
+}
+
+QLineEdit
+{
+    background: #1E232D;
+    border: 1px solid #3B4352;
+    border-radius: 2px;
+    width: 88px;
+    height: 24px;
+}
+
+QCheckBox::indicator:unchecked{
+    border-image:url(:/image/res/image/radio_normal.png);
+}
+QCheckBox::indicator:checked{
+    border-image:url(:/image/res/image/radio_normal_select.png);
+}
+QCheckBox::indicator:indeterminate{
+    border-image:url(:/image/res/image/radio_half_select.png);
+}
+
+QTableView {
+    background: #252A35;
+}
+
+QHeaderView {
+    background: #1E232D;
+}
+
+QHeaderView::section {
+    background-color: #1E232D;
+    color: white;
+    padding-left: 10px;
+    border: none;
+    text-align: left;
+}
+
+QTableView::indicator:unchecked{
+    border-image:url(:/image/res/image/radio_normal.png);
+}
+QTableView::indicator:checked{
+    border-image:url(:/image/res/image/radio_normal_select.png);
+}
+QTableView::indicator:indeterminate{
+    border-image:url(:/image/res/image/radio_half_select.png);
+}
+
+CommonDialog #centralWidget
+{
+    background: #373C49;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+CommonDialog #title
+{
+    background: #494F5D;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+CommonDialog #cancelButton
+{
+    background: #5B6270;
+    border-radius: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+CommonDialog #okButton
+{
+    background: #5B6270;
+    border-radius: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+CommonDialog #closeButton
+{
+    border: none;
+}
+
+QWidget#ServoForm
+{
+    background: #5DFCFF;
+}
+
+ConnectWidget #connectBtn
+{
+	color:red
+}
+
+QWidget#timeShaftTitle
+{
+    background: #313745;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #FFFFFF
+}

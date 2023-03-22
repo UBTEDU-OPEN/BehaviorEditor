@@ -1,0 +1,30 @@
+/*******************titlebar 模块*********************/
+
+TitleBar > QPushButton
+{
+    border: none;
+}
+
+TitleBar#titleBar > QLabel#logoLabel
+{
+    font-family: Avenir-Medium;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 20px;
+}
+
+QPushButton#minBtn{border-image: url(:image/res/image/titleBar/ic_minimize.png);}
+QPushButton#minBtn:hover{border-image: url(:image/res/image/titleBar/ic_minimize_mouseover.png);}
+QPushButton#minBtn:pressed{border-image: url(:image/res/image/titleBar/ic_minimize_p.png);}
+
+QPushButton#maxBtn{border-image: url(:image/res/image/titleBar/ic_maximize.png);}
+QPushButton#maxBtn:hover{border-image: url(:image/res/image/titleBar/ic_maximize_mouseover.png);}
+QPushButton#maxBtn:pressed{border-image: url(:image/res/image/titleBar/ic_maximize_p.png);}
+
+QPushButton#closeBtn{border-image: url(:image/res/image/titleBar/ic_close.png);}
+QPushButton#closeBtn:hover{border-image: url(:image/res/image/titleBar/ic_close_mouseover.png);}
+QPushButton#closeBtn:pressed{border-image: url(:image/res/image/titleBar/ic_close_p.png);}
+
+
+

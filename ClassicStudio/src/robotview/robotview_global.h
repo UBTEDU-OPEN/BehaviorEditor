@@ -1,0 +1,12 @@
+#ifndef ROBOTVIEW_GLOBAL_H
+#define ROBOTVIEW_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(ROBOTVIEW_LIBRARY)
+#  define ROBOTVIEWSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define ROBOTVIEWSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // ROBOTVIEW_GLOBAL_H

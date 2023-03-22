@@ -1,0 +1,60 @@
+ControlWidget
+{
+	background: #252A35;
+	color: white;	
+}
+#actionLayerWidget,#controlWidget,#musicLayerWidget,#frameControlWidget
+{
+	background:#2C313D;
+}
+QPushButton#addMusic
+{
+	background: #252A35;
+	border: 1px solid #3B4352;
+	border-radius: 4px;
+	color: white;
+}
+
+QPushButton#frameRateSettingBtn
+{
+	background: #5B6479;
+	border: 1px solid #5B6479;
+	border-radius: 4px;
+	color: white;
+}
+
+QTimeEdit
+{
+	border: none;
+}
+
+QTimeEdit:disabled
+{
+	background: #2C313D;
+	color: #00A5FF;
+}
+
+QPushButton#playAll[playing=false], QPushButton#playAction[playing=false], QPushButton#playMusic[playing=false]
+{
+	border-image: url(:/res/image/ic_time_play.png);
+}
+
+QPushButton#playAll[playing=true], QPushButton#playAction[playing=true], QPushButton#playMusic[playing=true]
+{
+	border-image: url(:/res/image/ic_time_suspend.png);
+}
+
+QPushButton#playAll:disabled, QPushButton#playAction:disabled, QPushButton#playMusic:disabled
+{
+	border-image: url(:/res/image/ic_time_play_disable.png);
+}
+
+QPushButton#stopAll, QPushButton#stopAction, QPushButton#stopMusic
+{
+	border-image: url(:/res/image/ic_time_stop.png);
+}
+
+QPushButton#stopAll:disabled, QPushButton#stopAction:disabled, QPushButton#stopMusic:disabled
+{
+	border-image: url(:/res/image/ic_time_stop_disable.png);
+}

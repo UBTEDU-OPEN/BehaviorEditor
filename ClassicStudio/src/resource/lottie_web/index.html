@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html style="width: 100%;height: 100%">
+
+<head>
+	<script src="lottie.js"></script>
+	<script src="qwebchannel.js"></script>
+</head>
+
+<body style="margin: 0;">
+	<!--style="width:200px;height:200px;background-color:#333;position: absolute;left:0;right:0;top:0;bottom:0;margin:auto"-->
+	<div style="width:200px;height:200px;background-color:#333;position: absolute;left:0;right:0;top:0;bottom:0;margin:auto" id="bodymovin"></div>
+	<script>
+		var anim;
+		var parseFinished = false;
+		var loops = 0;
+		new QWebChannel(qt.webChannelTransport, function (channel) {
+			window.bridge = channel.objects.bridge;
+		})
+		function parseAnimation(data) {
+			console.log('start parseAnimation', data);
+			var animData = {
+				wrapper: document.getElementById('bodymovin'),
+				animType: 'canvas',
+				loop: true,
+				prerender: true,
+				autoplay: true,
+				path: data
+			};
+			anim = bodymovin.loadAnimation(animData);
+
+			anim.addEventListener('loopComplete', function (e) {
+				console.log('loopComplete',loops);
+				if (loops > 0) {
+					loops--;
+				} else {
+					anim.pause();
+				}
+			});
+
+			anim.addEventListener('data_ready', function (e) {
+				console.log('data_ready',anim.totalFrames,anim.frameRate,anim.getDuration());
+				if (window.bridge){
+					var info = {};
+					info.totalFrames = anim.totalFrames;
+					info.duration = anim.getDuration();
+					info.frameRate = anim.frameRate;
+					window.bridge.basicInfo(JSON.stringify(info));
+				}
+			});		
+
+			anim.addEventListener('enterFrame', function (e) { //enterFrame
+				console.log('enterFrame',e);
+				if (window.bridge && e.currentTime > 1 && parseFinished == false) { //window.bridge && 
+					parseFinished = true;
+					const firstFrame = document.getElementById('bodymovin').getElementsByTagName('canvas')[0].toDataURL();
+					window.bridge.parseFinished(firstFrame);
+					anim.pause();
+				}
+			});
+		}
+
+		function stopAnimation() {
+			if (parseFinished == true) {
+				anim.pause();
+			}
+		}
+
+		function setCurrentImage(timeOffset) {
+			console.log('setCurrentImage',timeOffset,parseFinished);
+			if (parseFinished == true) {
+				anim.goToAndStop(timeOffset, true);
+			}
+		}
+
+		function playAnimation(timeOffset) {
+			console.log('setCurrentImage',timeOffset,parseFinished);
+			if (parseFinished == true) {
+				anim.goToAndPlay(timeOffset, true);
+			}
+		}
+
+		function setLoops(remainLoops) {
+			console.log('setLoops',loops,remainLoops);
+			loops = remainLoops;
+		}
+
+	</script>
+</body>
+
+</html>

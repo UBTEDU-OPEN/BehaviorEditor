@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>res/image/button_icon_down.png</file>
+        <file>res/image/line.png</file>
+        <file>res/image/top_icon_close.png</file>
+        <file>res/image/button_icon_up_highlight.png</file>
+        <file>res/qss/savefiledialog.qss</file>
+    </qresource>
+</RCC>

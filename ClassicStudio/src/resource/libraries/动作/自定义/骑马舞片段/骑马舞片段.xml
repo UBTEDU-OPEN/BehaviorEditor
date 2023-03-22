@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    @version        协议版本
+    @actionLevel    动作级别(常规动作=1, 高危动作=2)
+    @frameRate      帧率,单位:f/s
+    @startTime      开始时间(单位:ms)
+    @runTime        运行时间(单位:ms)
+-->
+<BCL version="1.0.0" actionLevel="0" frameRate="5" startTime="0" runTime="0">
+    <!--
+        @id    层ID(动作层=1, 音乐层=2, 表情层=3)
+        @name  层名称
+    -->
+    <Layer id="1" name="action">
+        <!--
+            @location  关键帧位置
+            @interval  帧间隔时间(此帧与上一帧的间隔时间)
+        -->
+        <Group name="骑马舞片段">
+            <Frame location="1" interval="1">
+                <!--
+                @id           舵机ID
+                @targetAngle  舵机目标角度
+                @runTime      运行时间
+                @runMode      运行模式(匀速运动=1, 曲线运动=2)
+            -->
+                <Servo id="1" targetAngle="18.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="173.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="171.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="12.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="30.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="92.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="58.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="54.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="123.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="93.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="120.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="131.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="123.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="67.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="53.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+            <Frame location="2" interval="1">
+                <Servo id="1" targetAngle="38.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="173.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="12.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="30.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="92.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="43.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="43.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="121.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="90.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="121.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="126.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="116.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="70.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="62.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+            <Frame location="3" interval="1">
+                <Servo id="1" targetAngle="18.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="173.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="171.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="12.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="30.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="92.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="58.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="54.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="123.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="93.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="120.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="131.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="123.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="67.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="53.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+            <Frame location="4" interval="1">
+                <Servo id="1" targetAngle="38.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="173.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="12.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="30.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="92.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="43.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="43.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="121.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="90.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="121.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="126.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="116.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="70.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="62.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+            <Frame location="5" interval="1">
+                <Servo id="1" targetAngle="22.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="168.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="156.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="153.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="3.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="25.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="58.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="58.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="75.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="110.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="128.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="84.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="124.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="117.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="67.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="92.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+            <Frame location="6" interval="1">
+                <Servo id="1" targetAngle="41.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="168.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="149.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="3.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="35.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="61.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="63.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="72.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="111.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="121.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="85.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="132.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="139.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="55.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="90.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+            <Frame location="7" interval="1">
+                <Servo id="1" targetAngle="22.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="168.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="156.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="153.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="3.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="25.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="58.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="58.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="75.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="110.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="128.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="84.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="124.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="117.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="67.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="92.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+            <Frame location="8" interval="1">
+                <Servo id="1" targetAngle="41.0" runTime="0" runMode="1"/>
+                <Servo id="2" targetAngle="168.0" runTime="0" runMode="1"/>
+                <Servo id="3" targetAngle="149.0" runTime="0" runMode="1"/>
+                <Servo id="4" targetAngle="141.0" runTime="0" runMode="1"/>
+                <Servo id="5" targetAngle="3.0" runTime="0" runMode="1"/>
+                <Servo id="6" targetAngle="35.0" runTime="0" runMode="1"/>
+                <Servo id="7" targetAngle="61.0" runTime="0" runMode="1"/>
+                <Servo id="8" targetAngle="63.0" runTime="0" runMode="1"/>
+                <Servo id="9" targetAngle="72.0" runTime="0" runMode="1"/>
+                <Servo id="10" targetAngle="111.0" runTime="0" runMode="1"/>
+                <Servo id="11" targetAngle="121.0" runTime="0" runMode="1"/>
+                <Servo id="12" targetAngle="85.0" runTime="0" runMode="1"/>
+                <Servo id="13" targetAngle="132.0" runTime="0" runMode="1"/>
+                <Servo id="14" targetAngle="139.0" runTime="0" runMode="1"/>
+                <Servo id="15" targetAngle="55.0" runTime="0" runMode="1"/>
+                <Servo id="16" targetAngle="90.0" runTime="0" runMode="1"/>
+                <Servo id="17" targetAngle="90.0" runTime="0" runMode="1"/>
+            </Frame>
+        </Group>
+    </Layer>
+    <Layer id="2" name="music"/>
+    <Layer id="3" name="expression"/>
+</BCL>

@@ -1,0 +1,12 @@
+#ifndef SERVOEDITOR_GLOBAL_H
+#define SERVOEDITOR_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(SERVOEDITOR_LIBRARY)
+#  define SERVOEDITOR_EXPORT Q_DECL_EXPORT
+#else
+#  define SERVOEDITOR_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SERVOEDITOR_GLOBAL_H

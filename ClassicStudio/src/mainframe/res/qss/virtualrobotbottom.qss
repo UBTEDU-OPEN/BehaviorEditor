@@ -1,0 +1,17 @@
+/*******************虚拟机器人底部按钮模块 模块*********************/
+QWidget#VirtualRobotBottomWidget{
+width:520px;
+height:66px;
+background-color: rgb(37, 42, 53);
+border-radius: 33px 33px 33px 33px;
+}
+
+QPushButton  #stopBtn,#playBtn,#resetBtn,#modifyBtn,#addBtn{
+    border:none;
+    width:80px;
+    height:50px;
+
+}
+
+
+

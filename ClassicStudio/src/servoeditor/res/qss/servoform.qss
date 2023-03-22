@@ -1,0 +1,7 @@
+QLable#servoId
+{
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+

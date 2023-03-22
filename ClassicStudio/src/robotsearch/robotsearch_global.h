@@ -1,0 +1,12 @@
+#ifndef ROBOTSEARCH_GLOBAL_H
+#define ROBOTSEARCH_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(ROBOTSEARCH_LIBRARY)
+#  define ROBOTSEARCH_EXPORT Q_DECL_EXPORT
+#else
+#  define ROBOTSEARCH_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // ROBOTSEARCH_GLOBAL_H

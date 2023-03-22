@@ -1,0 +1,78 @@
+SaveFileDialog > QPushButton
+{
+
+    border:none;
+
+}
+SaveFileDialog > QLabel
+{
+    background:transparent
+}
+QPushButton#closeBtn{border-image: url(:/images/res/images/ic_close_tab.png);}
+QPushButton#closeBtn:pressed{border-image: url(:/images/res/images/ic_close_tab_p.png);}
+
+QDailog#SaveFileDialog
+{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+
+
+
+QWidget#titleWidget
+{
+    background-color:#505769
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+
+}
+QPushButton#chooseFilePathBtn
+{
+    color: rgb(255, 255, 255);
+    border-radius:14px 14px 14px 14px;
+    background-color: rgb(0, 165, 255);
+}
+QPushButton#chooseFilePathBtn:hover
+{
+    background-color: rgb(85, 255, 255);
+}
+QPushButton#chooseFilePathBtn:pressed
+{
+    background-color: rgb(144, 144, 144);
+}
+
+QPushButton#cancelBtn
+{
+    color: rgb(255, 255, 255);
+    border-radius:14px 14px 14px 14px;
+    background-color: rgb(0, 165, 255);
+}
+QPushButton#cancelBtn:hover
+{
+    background-color: rgb(85, 255, 255);
+}
+QPushButton#cancelBtn:pressed
+{
+    background-color: rgb(144, 144, 144);
+}
+
+
+QPushButton#sureBtn
+{
+    color: rgb(255, 255, 255);
+    border-radius:14px 14px 14px 14px;
+    background-color: rgb(0, 165, 255);
+}
+QPushButton#sureBtn:hover
+{
+    background-color: rgb(85, 255, 255);
+}
+QPushButton#sureBtn:pressed
+{
+    background-color: rgb(144, 144, 144);
+}
+
+

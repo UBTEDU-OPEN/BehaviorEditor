@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>res/images/ic_close_tab.png</file>
+        <file>res/images/ic_close_tab_p.png</file>
+        <file>res/images/ic_robot_highlight.png</file>
+        <file>res/images/loading.gif</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>qss/robotsearch.qss</file>
+    </qresource>
+</RCC>

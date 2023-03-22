@@ -1,0 +1,12 @@
+**/.vs
+*.vcxproj*
+*.user
+*.sln
+*.stash
+**/release
+**/debug
+**/build-*
+temp/
+bin/
+Makefile*
+ui_*.h

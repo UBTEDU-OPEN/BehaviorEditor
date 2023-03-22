@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file alias="add">res/add-black-18dp.svg</file>
+        <file alias="del">res/baseline_close_black_18dp.png</file>
+        <file alias="face">res/face_icon.png</file>
+        <file alias="mirror">res/mirror.png</file>
+        <file alias="reverse">res/reverse.png</file>
+        <file alias="tipicon">res/tipwidgeticon.png</file>
+        <file alias="checked">res/checked.png</file>
+        <file alias="partiallychecked">res/partiallychecked.png</file>
+        <file alias="unchecked">res/unchecked.png</file>
+        <file>res/radio_half_select.png</file>
+        <file>res/radio_normal.png</file>
+        <file>res/radio_normal_select.png</file>
+    </qresource>
+</RCC>

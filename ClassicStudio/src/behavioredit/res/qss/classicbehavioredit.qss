@@ -1,0 +1,59 @@
+ActionGroupWidget[selected=false]
+{
+	background: #2C313D;
+	color: white;
+}
+ActionGroupWidget[selected=true]
+{
+	background: #2C313D;
+	color: white;
+	border: 1px solid #30E0FE;
+}
+
+ActionGroupWidget #actionsWidget,#titleWidget
+{
+	background: rgba(48,116,254,25);
+	color: white;
+}
+
+ActionGroupWidget QPushButton
+{
+    border: none;
+}
+
+ActionGroupWidget QLabel
+{
+    color: white;
+}
+
+QWidget
+{
+	border: none;
+}
+
+QLabel#framePointerBottom,QLabel#pos
+{
+	border-image: url(:/res/image/ic_fram_bg.png);
+	color: #00A5FF;
+}
+
+MusicWidget[selected=false]
+{
+	border: none;
+}
+
+MusicWidget[selected=true]
+{
+
+	border: 1px solid #30E0FE;
+}
+
+MusicWidget #audioWidget,#musicTitleWidget
+{
+	background: rgba(61,135,162,76);
+}
+
+MusicWidget QLabel
+{
+    color: white;
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    @id            文件类型(用于不同机器人配置)
+    @name          文件类型名称
+-->
+<Robot type="2" name="yanshee1_1">
+	<!--
+            @id            舵机部位ID(头=1, 右臂=2, 左臂=3, 右腿=4, 左腿=5)
+            @name          舵机部位名称
+    -->
+	<Body id="1" name="头" type="1">
+		<!--
+            @id            舵机ID
+            @name          舵机名称
+			@apollo_name   舵机apollo中的名称
+            @modelNodeName 模型对应舵机的节点名称
+		    @axis          旋转坐标轴(x,y,z), 注意该初的坐标系为产品提供，与maya的坐标系不同。
+		    @offset        舵机角度与模型角度的补偿值(界面角度 + offset = 模型角度)
+		    @init          舵机初始角度(界面角度)
+		    @min           舵机最小角度(界面角度)
+		    @max           舵机最大角度(界面角度)
+			@opposite      对应肢体的舵机ID，如果没有就填自身ID；如果数值相反，取负值
+        -->
+		<Servo id="17" name="转头" apollo_name="NeckLR" modelNodeName="head_002" axis="0,0,-1" offset="-90" init="90" min="15" max="165" opposite="-17"/>
+	</Body>
+	<Body id="2" name="右臂" type="2">
+		<Servo id="1" name="右肩" apollo_name="RightShoulderRoll" modelNodeName="right_hand_6" axis="-1,0,0" offset="-90" init="90" min="0" max="180" opposite="-4"/>
+		<Servo id="2" name="右上臂" apollo_name="RightShoulderFlex" modelNodeName="right_hand_5" axis="0,1,0" offset="-180" init="140" min="0" max="180" opposite="-5"/>
+		<Servo id="3" name="右前臂" apollo_name="RightElbowFlex" modelNodeName="right_hand_4" axis="0,1,0" offset="-90" init="165" min="0" max="180" opposite="-6"/>
+	</Body>
+	<Body id="3" name="左臂" type="3">
+		<Servo id="4" name="左肩" apollo_name="LeftShoulderRoll" modelNodeName="left_hand_7" axis="1,0,0" offset="-90" init="90" min="0" max="180" opposite="-1"/>
+		<Servo id="5" name="左上臂" apollo_name="LeftShoulderFlex" modelNodeName="left_hand_5" axis="0,1,0" offset="0" init="40" min="0" max="180" opposite="-2"/>
+		<Servo id="6" name="左前臂" apollo_name="LeftElbowFlex" modelNodeName="left_hand_4" axis="0,1,0" offset="-90" init="15" min="0" max="180" opposite="-3"/>
+	</Body>
+	<Body id="4" name="右腿" type="4">
+		<Servo id="7" name="右髋侧转" apollo_name="RightHipLR" modelNodeName="right_leg00_10" axis="0,1,0" offset="-90" init="90" min="0" max="120" opposite="-12"/>
+		<Servo id="8" name="右髋前转" apollo_name="RightHipFB" modelNodeName="right_leg00_9" axis="-1,0,0" offset="-80" init="60" min="10" max="180" opposite="-13"/>
+		<Servo id="9" name="右膝盖" apollo_name="RightKneeFlex" modelNodeName="right_leg00_8" axis="1,0,0" offset="-117" init="76" min="0" max="180" opposite="-14"/>
+		<Servo id="10" name="右踝前转" apollo_name="RightAnkleFB" modelNodeName="right_leg00_7" axis="1,0,0" offset="-90" init="110" min="0" max="180" opposite="-15"/>
+		<Servo id="11" name="右踝侧转" apollo_name="RightAnkleUD" modelNodeName="right_leg00_6" axis="0,1,0" offset="-90" init="90" min="65" max="180" opposite="16"/>
+	</Body>
+	<Body id="5" name="左腿" type="5">
+		<Servo id="12" name="左髋侧转" apollo_name="LeftHipLR" modelNodeName="left_leg3_10" axis="0,1,0" offset="-90" init="90" min="60" max="180" opposite="-7"/>
+		<Servo id="13" name="左髋前转" apollo_name="LeftHipFB" modelNodeName="left_leg3_9" axis="1,0,0" offset="-100" init="120" min="0" max="170" opposite="-8"/>
+		<Servo id="14" name="左膝盖" apollo_name="LeftKneeFlex" modelNodeName="left_leg3_8" axis="-1,0,0" offset="-62" init="104" min="0" max="180" opposite="-9"/>
+		<Servo id="15" name="左踝前转" apollo_name="LeftAnkleFB" modelNodeName="left_leg3_7" axis="-1,0,0" offset="-90" init="70" min="0" max="180" opposite="-10"/>
+		<Servo id="16" name="左踝侧转" apollo_name="LeftAnkleUD" modelNodeName="left_leg3_6" axis="0,1,0" offset="-90" init="90" min="0" max="115" opposite="11"/>
+	</Body>
+</Robot>

@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/image/toolBar/ic_help.png</file>
+        <file>res/image/toolBar/ic_help_mouseover.png</file>
+        <file>res/image/toolBar/ic_help_p.png</file>
+        <file>res/image/toolBar/ic_new.png</file>
+        <file>res/image/toolBar/ic_new_mouseover.png</file>
+        <file>res/image/toolBar/ic_new_p.png</file>
+        <file>res/image/toolBar/ic_open.png</file>
+        <file>res/image/toolBar/ic_open_mouseover.png</file>
+        <file>res/image/toolBar/ic_open_p.png</file>
+        <file>res/image/toolBar/ic_power_20%.png</file>
+        <file>res/image/toolBar/ic_power_40%.png</file>
+        <file>res/image/toolBar/ic_power_60%.png</file>
+        <file>res/image/toolBar/ic_power_80%.png</file>
+        <file>res/image/toolBar/ic_power_100%.png</file>
+        <file>res/image/toolBar/ic_robot.png</file>
+        <file>res/image/toolBar/ic_robot_highlight.png</file>
+        <file>res/image/toolBar/ic_save as.png</file>
+        <file>res/image/toolBar/ic_save as_mouseover.png</file>
+        <file>res/image/toolBar/ic_save as_p.png</file>
+        <file>res/image/toolBar/ic_save.png</file>
+        <file>res/image/toolBar/ic_save_mouseover.png</file>
+        <file>res/image/toolBar/ic_save_p.png</file>
+    </qresource>
+</RCC>

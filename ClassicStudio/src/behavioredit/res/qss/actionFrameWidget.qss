@@ -1,0 +1,7 @@
+ActionFrameWidget[selected=false] {
+    background-color: rgba(48,224,254,102);
+}
+
+ActionFrameWidget[selected=true] {
+    background-color: rgba(48,224,254,255);
+}

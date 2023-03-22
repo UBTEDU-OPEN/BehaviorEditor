@@ -1,0 +1,16 @@
+/*******************关节调节模块*********************/
+
+
+QPushButton
+{
+    border: none;
+}
+JointAdjuestmentWidget#adjustmentWidget
+{
+    background-color: #252A35;
+}
+
+JointAdjuestmentWidget#widget_2
+{
+    background-color: #2C313D ;
+}

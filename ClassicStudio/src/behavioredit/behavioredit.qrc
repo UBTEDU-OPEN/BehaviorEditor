@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/classicbehavioredit.qss</file>
+        <file>res/image/btn_choice1.png</file>
+        <file>res/image/ic_time_add.png</file>
+        <file>res/image/ic_time_music.png</file>
+        <file>res/image/ic_time_play.png</file>
+        <file>res/image/ic_time_play_disable.png</file>
+        <file>res/image/ic_time_set.png</file>
+        <file>res/image/ic_time_silde.png</file>
+        <file>res/image/ic_time_silde_plus.png</file>
+        <file>res/image/ic_time_silde_subtract.png</file>
+        <file>res/image/ic_time_sport.png</file>
+        <file>res/image/ic_time_stop.png</file>
+        <file>res/image/ic_time_stop_disable.png</file>
+        <file>res/qss/controlWidget.qss</file>
+        <file>res/image/ic_fram_blue.png</file>
+        <file>res/image/ic_fram_blue_highlight.png</file>
+        <file>res/image/ic_fram_distance_left.png</file>
+        <file>res/image/ic_fram_distance_right.png</file>
+        <file>res/image/ic_fram_head.png</file>
+        <file>res/image/ic_fram_left.png</file>
+        <file>res/image/ic_fram_red.png</file>
+        <file>res/image/ic_fram_red_highlight.png</file>
+        <file>res/image/ic_fram_right.png</file>
+        <file>res/qss/actionFrameWidget.qss</file>
+        <file>res/image/ic_time_suspend.png</file>
+        <file>res/image/ic_time_suspend_disable.png</file>
+        <file>res/image/ic_fram_bg.png</file>
+    </qresource>
+</RCC>

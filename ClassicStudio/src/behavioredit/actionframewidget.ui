@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ActionFrameWidget</class>
+ <widget class="QWidget" name="ActionFrameWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>14</width>
+    <height>63</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>14</width>
+    <height>63</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16</width>
+    <height>63</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,59 @@
+/*******************tab 模块*********************/
+
+#templateBarHolder
+{
+    background-color:#313745;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+}
+
+
+
+QTabBar::tab
+{
+    background:#444B5E;
+    font-size: 12px;
+    min-height: 38px;
+    min-width: 148px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+QLabel#actionNameLabel
+{
+    font-family: Avenir-Medium;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: transparent;
+}
+
+
+QLabel#iconLabel{background-color: transparent;border-image: url(:image/res/image/template/ic_file.png);}
+QLabel#iconLabel:hover{border-image: url(:image/res/image/template/ic_file_mouseover.png);}
+QLabel#iconLabel:pressed{border-image: url(:image/res/image/template/ic_file_p.png);}
+
+QTabBar::tab:selected
+{
+    background: #00A5FF;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+
+QToolButton#refreshBtn,#deleteBtn,#stopBtn,#importBtn,#exportBtn
+{
+    border: none;
+    background:#252A35;
+}
+
+
+QWidget#bottomWidget
+{
+    background-color:#252A35;
+    border-bottom-left-radius: 6px;
+}
